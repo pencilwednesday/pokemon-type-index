@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PokeAPI</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+
+  
+  <body>
+    <div class="container">
+      <div class="dexContainer">
+        <img src="/assets/dexTech.png" class="dexTech" alt="" />
+        <div class="pokeInfo">
+          <input
+            type="text"
+            id="pokemonName"
+            placeholder="Enter Name or Pokedex #"
+          />
+          <button onclick="fetchData()">Fetch Pokemon</button> <br />
+          <div id="errorMessage"></div>
+          <div class="infoContainer">
+            <img
+              src=""
+              alt="Pokemon Sprite"
+              id="pokemonSprite"
+              style="display: none"
+            />
+            <div>
+              <div id="pokeName"></div>
+              <br />
+              <div id="pokemonID"></div>
+              <br />
+              <div id="pokemonType"></div>
+              <br />
+              <div id="pokemonCounters"></div>
+              <br />
+            </div>
+            <div id="results" style="display: none">
+              <h2>Weaknesses</h2>
+              <ul id="weaknesses"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/index.js"></script>
+  </body>
+
+
+</html>

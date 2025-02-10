@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.dexTech {
+  width: 100%;
+  max-width: 1000px;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.dexContainer {
+  padding: 5px 0 0 0;
+  width: 100%;
+  max-width: 1000px;
+  height: 312px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: lightgrey;
+
+}
+
+.pokeInfo {
+  background-color: none;
+}
+
+#pokemonSprite {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#pokemonName {
+  width: 250px;
+  text-align: center;
+}
+
+button {
+  margin: 20px 0 0 0;
+}
+
+.pokeInfo {
+  display: flex;
+}
+
+
+#results {
+  text-align: center;
+}
