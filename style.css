@@ -5,6 +5,108 @@
   font-family: "Roboto", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+section {
+  background-color: white;
+  margin: 0 auto;
+}
+
+.row {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 0 20px 0;
+}
+
+.click {
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.click:hover {
+  transform: scale(1.1);
+}
+
+.click:active {
+  transform: scale(0.6);
+}
+
+.highlight {
+  color: #f23c27;
+}
+
+.link__hover--effect {
+  position: relative;
+}
+
+.link__hover--effect:after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  height: 3px;
+  width: 0;
+  right: 0;
+  background-color: lightgray;
+  transition: all 300ms ease;
+}
+
+.link__hover--effect:hover:after {
+  left: 0;
+  width: 100%;
+}
+
+.link__hover--white {
+  background-color: white;
+}
+
+.link__hover--black {
+  background-color: black;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+
+/* 
+
+LANDING PAGE
+
+*/
+
+#landing-page {
+  min-height: 100vh;
+  max-width: 1200px;
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -30,12 +132,12 @@ body {
   border: 1px solid black;
   border-radius: 10px;
   background-color: lightgrey;
-
 }
 
+/*
 .pokeInfo {
-  background-color: none;
 }
+*/
 
 #pokemonSprite {
   height: 100%;
@@ -56,7 +158,30 @@ button {
   display: flex;
 }
 
-
 #results {
   text-align: center;
+}
+
+/* 
+
+  NAVIGATION 
+
+*/
+
+nav {
+  background-color: rgb(71, 71, 71);
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 72px;
+  border: 3px solid #d4443f;
+  border-top: none;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 0 80px 0 rgb(0, 0, 0, 0.45);
+  z-index: 1000;
 }
